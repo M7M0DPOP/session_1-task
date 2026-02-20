@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TextScreen extends StatefulWidget {
-  const TextScreen({super.key});
+class FormScreen extends StatefulWidget {
+  const FormScreen({super.key});
 
   @override
-  State<TextScreen> createState() => _TextScreenState();
+  State<FormScreen> createState() => _FormScreenState();
 }
 
-class _TextScreenState extends State<TextScreen> {
+class _FormScreenState extends State<FormScreen> {
   final nameControler = TextEditingController();
   final emailControler = TextEditingController();
   final phoneControler = TextEditingController();
@@ -30,7 +30,7 @@ class _TextScreenState extends State<TextScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Text Form Field'),
+          title: Text('Form Screen'),
           backgroundColor: const Color.fromARGB(255, 154, 158, 255),
           centerTitle: true,
         ),
@@ -80,6 +80,7 @@ class _TextScreenState extends State<TextScreen> {
                   },
                 ),
                 TextFormField(
+                  keyboardType: TextInputType.phone,
                   controller: phoneControler,
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.phone),

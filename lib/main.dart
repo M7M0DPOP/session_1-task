@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:session_1/text_screen.dart';
+import 'package:session_1/form_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const TextScreen(),
+      home: const FormScreen(),
     );
   }
 }
